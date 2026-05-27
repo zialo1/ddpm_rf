@@ -1,0 +1,198 @@
+(ddpm_rf) alex@MacBook-Pro-2 ddpm_rf % python evualate_v2.py
+working on dir (saving report there)= ./out/samples_onestep35057
+============================================================
+EVALUATING IMAGES
+============================================================
+
+Image: img_0.png
+Impact Score: 269.94
+Sharpness: 653.06
+Contrast: 46.08
+Entropy: 2.80
+Edge Density: 30.32
+
+Image: img_1.png
+Impact Score: 175.52
+Sharpness: 354.63
+Contrast: 44.01
+Entropy: 2.66
+Edge Density: 23.59
+
+Image: img_10.png
+Impact Score: 269.94
+Sharpness: 653.06
+Contrast: 46.08
+Entropy: 2.80
+Edge Density: 30.32
+
+Image: img_11.png
+Impact Score: 175.52
+Sharpness: 354.63
+Contrast: 44.01
+Entropy: 2.66
+Edge Density: 23.59
+
+Image: img_12.png
+Impact Score: 100.55
+Sharpness: 170.70
+Contrast: 31.41
+Entropy: 1.92
+Edge Density: 16.56
+
+Image: img_13.png
+Impact Score: 331.89
+Sharpness: 668.96
+Contrast: 80.93
+Entropy: 4.89
+Edge Density: 47.00
+
+Image: img_14.png
+Impact Score: 74.83
+Sharpness: 137.29
+Contrast: 32.38
+Entropy: 1.18
+Edge Density: 10.65
+
+Image: img_15.png
+Impact Score: 288.33
+Sharpness: 504.56
+Contrast: 77.70
+Entropy: 5.21
+Edge Density: 52.11
+
+Image: img_2.png
+Impact Score: 100.55
+Sharpness: 170.70
+Contrast: 31.41
+Entropy: 1.92
+Edge Density: 16.56
+
+Image: img_3.png
+Impact Score: 331.89
+Sharpness: 668.96
+Contrast: 80.93
+Entropy: 4.89
+Edge Density: 47.00
+
+Image: img_4.png
+Impact Score: 74.83
+Sharpness: 137.29
+Contrast: 32.38
+Entropy: 1.18
+Edge Density: 10.65
+
+Image: img_5.png
+Impact Score: 288.33
+Sharpness: 504.56
+Contrast: 77.70
+Entropy: 5.21
+Edge Density: 52.11
+
+Image: img_6.png
+Impact Score: 228.98
+Sharpness: 450.19
+Contrast: 35.69
+Entropy: 3.88
+Edge Density: 37.29
+
+Image: img_7.png
+Impact Score: 186.71
+Sharpness: 297.38
+Contrast: 69.05
+Entropy: 3.66
+Edge Density: 24.47
+
+Image: img_8.png
+Impact Score: 240.24
+Sharpness: 380.97
+Contrast: 66.41
+Entropy: 4.99
+Edge Density: 39.35
+
+Image: img_9.png
+Impact Score: 235.52
+Sharpness: 389.30
+Contrast: 82.83
+Entropy: 4.41
+Edge Density: 30.75
+
+============================================================
+SUMMARY
+============================================================
+Average Impact Score: 210.85
+Best Image: ./out/samples_onestep35057/img_13.png
+Worst Image: ./out/samples_onestep35057/img_14.png
+
+Saved CSV to:
+./out/impact_scores.csv
+working on dir (saving report there)= ./out/ddpm
+============================================================
+EVALUATING IMAGES
+============================================================
+
+Image: sample_0.png
+Impact Score: 483.78
+Sharpness: 1203.64
+Contrast: 44.80
+Entropy: 5.08
+Edge Density: 42.83
+
+Image: sample_1.png
+Impact Score: 441.88
+Sharpness: 1042.71
+Contrast: 52.85
+Entropy: 5.25
+Edge Density: 48.31
+
+Image: sample_2.png
+Impact Score: 671.08
+Sharpness: 1790.24
+Contrast: 62.18
+Entropy: 5.32
+Edge Density: 49.00
+
+Image: sample_3.png
+Impact Score: 718.77
+Sharpness: 1937.01
+Contrast: 76.45
+Entropy: 5.32
+Edge Density: 43.77
+
+Image: sample_4.png
+Impact Score: 516.01
+Sharpness: 1288.25
+Contrast: 61.32
+Entropy: 5.23
+Edge Density: 40.53
+
+Image: sample_5.png
+Impact Score: 722.73
+Sharpness: 1963.01
+Contrast: 63.15
+Entropy: 5.31
+Edge Density: 51.36
+
+Image: sample_6.png
+Impact Score: 523.41
+Sharpness: 1309.93
+Contrast: 56.51
+Entropy: 5.26
+Edge Density: 39.84
+
+Image: sample_7.png
+Impact Score: 959.35
+Sharpness: 2755.62
+Contrast: 56.25
+Entropy: 5.29
+Edge Density: 51.24
+
+============================================================
+SUMMARY
+============================================================
+Average Impact Score: 629.62
+Best Image: ./out/ddpm/sample_7.png
+Worst Image: ./out/ddpm/sample_1.png
+
+Saved CSV to:
+./out/impact_scores.csv
+
