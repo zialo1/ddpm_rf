@@ -46,7 +46,7 @@ Features:
 - Sinusoidal time embeddings
 - EMA weights
 - 4-step Euler sampling
-- 10 epochs
+- 5 epochs
 
 ============================================================
 """
@@ -54,6 +54,7 @@ Features:
 import os
 import math
 import copy
+import time
 
 from PIL import Image
 
@@ -77,9 +78,10 @@ print("running rectified flow")
 
 IMAGE_SIZE = 64
 
-BATCH_SIZE = 4
+BATCH_SIZE = 8
 
-EPOCHS = 10
+EPOCHS1 = 15
+EPOCHS2 = 10
 
 LR = 2e-4
 
@@ -663,7 +665,9 @@ optimizer = torch.optim.AdamW(
 print("Starting training...")
 
 
-for epoch in range(EPOCHS):
+for epoch in range(EPOCHS1):
+
+    starttime=time.time()
 
     epoch_loss = 0.0
 
@@ -694,9 +698,10 @@ for epoch in range(EPOCHS):
 
         if i % 100 == 0:
 
+
             print(
                 f"{i}, "
-                f"loss={loss.item():.6f}"
+                f"loss={loss.item():.6f}, delta={(time.time()-starttime)/60}"
             )
 
         i += 1
@@ -704,7 +709,7 @@ for epoch in range(EPOCHS):
     avg_loss = epoch_loss / len(dataloader)
 
     print(
-        f"Epoch [{epoch+1}/{EPOCHS}] "
+        f"Epoch [{epoch+1}/{EPOCHS1}] "
         f"Loss: {avg_loss:.6f}"
     )
 
