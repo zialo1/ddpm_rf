@@ -90,11 +90,17 @@ NUM_WORKERS = 0
 
 #LR = 2e-4
 
-NORMAL_EPOCHS = 1
-REFLOW_EPOCHS = 1
+DEBUG_MODE=False
+if DEBUG_MODE:
+    NORMAL_EPOCHS = 1
+    REFLOW_EPOCHS = 1
 
-LR = 5e-1
+    LR = 5e-1
+else:
+    NORMAL_EPOCHS = 15
+    REFLOW_EPOCHS = 10
 
+    LR = 2e-4
 
 
 EMA_DECAY = 0.999
@@ -784,7 +790,7 @@ for epoch in range(NORMAL_EPOCHS):
 
     i = 0
 
-    for images in dataloader:
+    for images, _ in dataloader:
 
         images = images.to(DEVICE)
 
